@@ -1,0 +1,18 @@
+01-filesystem/
+    fhs-and-core-dirs.md
+    proc-basics.md
+  02-permissions/
+    permissions-basics.md
+    users-groups-sudo.md
+  03-processes/
+    processes-signals-jobs.md
+  04-systemd-logs/
+    systemctl-basics.md
+    journalctl-cheatsheet.md
+  05-networking/
+    dns-http-ports.md
+    tools-curl-dig-ss.md
+  labs/
+    lab01-permissions.md
+    lab02-service-debug.md
+    lab03-network-debug.md
