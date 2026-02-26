@@ -1,4 +1,3 @@
-Markdown
 # Título do assunto
 Hierarquia dos diretórios (não está na ordem de importancia)
 ## Objetivo
@@ -14,7 +13,7 @@ Hierarquia dos diretórios (não está na ordem de importancia)
 -  /usr/bin " : Contém arquivos de programas (binários) do sistema.
 - " /run " : Dados de runtime (PID files, sockets etc.) relevantes para processos rodando agora.
 
-## Conceito em 5 linhas
+## Conceito
 FHS ( Filesytem Hierarchy Standard) é um guia padrão que visa organizar as pastas do linux,
 ficando previsivel saber onde encontrar o que precisa.
 
@@ -25,7 +24,7 @@ ficando previsivel saber onde encontrar o que precisa.
 - dados temporários ( /tmp )
 - dados de runtime ( /run )
 
-## Comandos que eu usei (com exemplos reais)
+## Comandos que eu usei
 
 1 - Você tenta iniciar um serviço e ele falha.
 
