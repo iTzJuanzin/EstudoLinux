@@ -1,6 +1,6 @@
-# Título do assunto
-Hierarquia dos diretórios (não está na ordem de importancia)
-## Objetivo
+# Hierarquia dos diretórios 
+
+## Diretórios principais (Resumo prático)
 
 - " / " : Pasta raiz, deve conter o minimo para boot e reparo.
 - " /etc " : Configuração do sistema e dos serviços, especifica daquele host.
@@ -14,8 +14,7 @@ Hierarquia dos diretórios (não está na ordem de importancia)
 - " /run " : Dados de runtime (PID files, sockets etc.) relevantes para processos rodando agora.
 
 ## Conceito
-FHS ( Filesytem Hierarchy Standard) é um guia padrão que visa organizar as pastas do linux,
-ficando previsivel saber onde encontrar o que precisa.
+FHS ( Filesytem Hierarchy Standard) é um guia padrão que visa organizar as pastas do linux, ficando previsivel saber onde encontrar o que precisa.
 
 - config ( /etc )
 - logs e dados que mudar ( /var )
