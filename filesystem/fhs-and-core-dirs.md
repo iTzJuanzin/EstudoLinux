@@ -1,12 +1,47 @@
 Markdown
 # Título do assunto
-
+Hierarquia dos diretórios (não está na ordem de importancia)
 ## Objetivo
-(1–2 frases: o que eu quero ser capaz de fazer?)
+
+" / " : Pasta raiz, deve conter o minimo para boot e reparo.
+" /etc " : Configuração do sistema e dos serviços, especifica daquele host.
+" /var " : Dados variáveis (logs, spool, cache, estado de apps).
+" /var/log " : Logs (auth, syslog, serviços).
+" /home" : Pastas dos usuários (Documentos, configs do usuário). É "seu espaço".
+" /tmp " : Diretório para armazenamento de arquivos temporários criado por programas. Geralmente são excluidos sempre que o sistema é reiniciado.
+" /proc " : interface para dados internos do kernels/initramfs.
+" /usr " : Onde fica a maior parte dos programs e bibliotecas do sistema.  
+" /usr/bin " : Contém arquivos de programas (binários) do sistema.
+" /run " : Dados de runtime (PID files, sockets etc.) relevantes para processos rodando agora.
 
 ## Conceito em 5 linhas
-(Explica com suas palavras, curto.)
+FHS ( Filesytem Hierarchy Standard) é um guia padrão que visa organizar as pastas do linux,
+ficando previsivel saber onde encontrar o que precisa.
+
+- config ( /etc )
+- logs e dados que mudar ( /var )
+- arquivos e usuários ( /home )
+- programas e bibliotecas ( /usr )
+- dados temporários ( /tmp )
+- dados de runtime ( /run )
 
 ## Comandos que eu usei (com exemplos reais)
+
+1 - Você tenta iniciar um serviço e ele falha.
+
 ```bash
-# comando aqui
+
+sudo systemctl status <serviço> --no-pager
+
+sudo journalctl -u <serviço> -b --no-pager | tail -n 80
+
+ls -la /etc | grep -i <serviço>
+
+ls -la /etc/<serviço> 2>/dev/null
+
+ls -la /run | grep -i <serviço>
+
+```
+2 - O sistem começa a falhar com mensagens de " No space left on device "
+
+```bash
