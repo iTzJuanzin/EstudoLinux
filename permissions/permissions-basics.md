@@ -72,17 +72,16 @@ Saída típica:
             - 0 = ---
 
         * exemplos:
-            chmod 644 arquivo.txt -> rw-r--r--
-            chmod 600 segredo.txt -> rw-------
-            chmod 755 script.sh -> rwxr-xr-x
-            chmod 700 pasta_privada -> rwx------
+            - chmod 644 arquivo.txt -> rw-r--r--
+            - chmod 600 segredo.txt -> rw-------
+            - chmod 755 script.sh -> rwxr-xr-x
+            - chmod 700 pasta_privada -> rwx------
 
 * chown: muda dono e/ou grupo
     * exemplos:
-        sudo chown juan arquivo.txt 
-        sudo chown juan:dev arquivo.txt
+        - sudo chown juan arquivo.txt 
+        - sudo chown juan:dev arquivo.txt
 
 * chgrp: muda só o grupo
     * exemplos :
-        sudo chgrp dev arquivo.txt 
-        
+        - sudo chgrp dev arquivo.txt 
